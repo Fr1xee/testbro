@@ -1,9 +1,11 @@
 // constants
 import Web3EthContract from "web3-eth-contract";
 import Web3 from "web3";
-import Caver from 'caver-js'
-const caver = new Caver(klaytn)
+import Caver from 'caver-js';
 
+const caver = new Caver(window.klaytn);
+
+export default caver;
 // log
 import { fetchData } from "../data/dataActions";
 
@@ -51,20 +53,20 @@ export const connect = () => {
       },
     });
     const CONFIG = await configResponse.json();
-    const { caver } = window;
-    const klaytn = klay && klay.isKaikas;
+    const { ethereum } = window;
+    const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
     if (metamaskIsInstalled) {
-      Caver.setProvider(klay);
-      let klaytn = new Kaikas(klay);
+      Web3EthContract.setProvider(ethereum);
+      let web3 = new Web3(ethereum);
       try {
-        const accounts = await klay.request({
-          method: "klay_requestAccounts",
+        const accounts = await ethereum.request({
+          method: "eth_requestAccounts",
         });
-        const networkId = await klay.request({
+        const networkId = await ethereum.request({
           method: "net_version",
         });
         if (networkId == CONFIG.NETWORK.ID) {
-          const SmartContractObj = new Caver(
+          const SmartContractObj = new Web3EthContract(
             abi,
             CONFIG.CONTRACT_ADDRESS
           );
@@ -72,7 +74,7 @@ export const connect = () => {
             connectSuccess({
               account: accounts[0],
               smartContract: SmartContractObj,
-              klay: klay,
+              web3: web3,
             })
           );
           // Add listeners start
@@ -90,7 +92,7 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      dispatch(connectFailed("Install Kaikas."));
+      dispatch(connectFailed("Install Metamask."));
     }
   };
 };
