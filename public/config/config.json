@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x9561796d87d8aedd086f6d2240426b7e6543677a",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0x9561796d87d8aedd086f6d2240426b7e6543677a",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "Testingmfers",
+  "SYMBOL": "TMfer",
+  "MAX_SUPPLY": 3333,
+  "WEI_COST": 4000000000000000000,
+  "DISPLAY_COST": 5,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/testingmfers-v2",
+  "SHOW_BACKGROUND": true
+}
