@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x32755f318d81755586d7629fbbb610776b3a3f83",
-  "SCAN_LINK": "https://scope.klaytn.com/account/0x32755f318d81755586d7629fbbb610776b3a3f83?tabId=txList",
+  "CONTRACT_ADDRESS": "0x9561796d87d8aedd086f6d2240426b7e6543677a",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0x9561796d87d8aedd086f6d2240426b7e6543677a",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "Matic",
