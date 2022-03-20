@@ -1,11 +1,6 @@
 // constants
 import Web3EthContract from "web3-eth-contract";
 import Web3 from "web3";
-import Caver from 'caver-js';
-
-const caver = new Caver(window.klaytn);
-
-export default caver;
 // log
 import { fetchData } from "../data/dataActions";
 
@@ -103,6 +98,7 @@ export const updateAccount = (account) => {
     dispatch(fetchData(account));
   };
 };
+
 
 // // constants
 // import Web3EthContract from "web3-eth-contract";
