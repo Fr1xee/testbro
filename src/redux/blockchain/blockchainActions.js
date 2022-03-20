@@ -4,12 +4,6 @@ import Web3 from "web3";
 // log
 import { fetchData } from "../data/dataActions";
 
-import Caver from 'caver-js';
-
-const caver = new Caver(window.klaytn);
-
-export default caver;
-
 const connectRequest = () => {
   return {
     type: "CONNECTION_REQUEST",
