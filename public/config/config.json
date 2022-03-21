@@ -9,10 +9,10 @@
   "NFT_NAME": "RocketMfers",
   "SYMBOL": "RocketMfer",
   "MAX_SUPPLY": 3333,
-  "WEI_COST": 100000000000000000,
+  "WEI_COST": 1000000000000000000,
   "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/rocketmfers",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/rockets-mfer",
   "SHOW_BACKGROUND": true
 }
