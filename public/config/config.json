@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x32755f318d81755586d7629fbbb610776b3a3f83",
-  "SCAN_LINK": "https://scope.klaytn.com/account/0x32755f318d81755586d7629fbbb610776b3a3f83?tabId=txList",
+  "CONTRACT_ADDRESS": "0xe31CcD1D6C4722Db37C54De8Ca0d2e43B5E35182",
+  "SCAN_LINK": "https://scope.klaytn.com/account/0xe31CcD1D6C4722Db37C54De8Ca0d2e43B5E35182?tabId=txList",
   "NETWORK": {
-    "NAME": "Klaytn Mainnet Cypress",
+    "NAME": "Klaytn Testnet Baobab",
     "SYMBOL": "KLAY",
-    "ID": 8217
+    "ID": 1001
   },
   "NFT_NAME": "RocketMfers",
   "SYMBOL": "RocketMfer",
